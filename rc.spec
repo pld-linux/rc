@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Shells
 Source0:	http://www.star.le.ac.uk/~tjg/rc/beta/%{name}-%{version}.tar.gz
+# Source0-md5:	b18e33f74d83979d92c51f4d8d781152
 URL:		http://www.star.le.ac.uk/~tjg/rc/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
