@@ -16,7 +16,7 @@ similiar to sh(1), it's syntax is is much closer to C, even than
 syntax csh.
 
 %description -l pl
-rc jest pow³ok± u¿ytkownika sytemu operacyjnego Plan 9. Jej sk³adnia
+rc jest pow³ok± u¿ytkownika systemu operacyjnego Plan 9. Jej sk³adnia
 jest trochê podobna do sh(1), ale jest znacznie bli¿sza C, nawet w
 porównaniu ze sk³adni± csh.
 
