@@ -1,12 +1,16 @@
+
+%define		ver	1.6
+%define		subver	c7
+
 Summary:	rc is a Plan 9 shell
 Summary(pl):	rc jest pow³ok± z systemu Plan 9
 Name:		rc
-Version:	1.6c6
+Version:	%{ver}%{subver}
 Release:	1
 License:	GPL
 Group:		Applications/Shells
 Source0:	http://www.star.le.ac.uk/~tjg/rc/beta/%{name}-%{version}.tar.gz
-# Source0-md5:	b18e33f74d83979d92c51f4d8d781152
+# Source0-md5:	ba0fe3606ac0f89ef040cb343f539989
 URL:		http://www.star.le.ac.uk/~tjg/rc/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
