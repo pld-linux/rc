@@ -2,7 +2,7 @@ Summary:	rc - a Plan 9 shell
 Summary(pl):	rc - pow³oka z systemu Plan 9
 Name:		rc
 Version:	1.7.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Shells
 Source0:	http://www.star.le.ac.uk/~tjg/rc/release/%{name}-%{version}.tar.gz
