@@ -1,6 +1,5 @@
-
-Summary:	rc is a Plan 9 shell
-Summary(pl):	rc jest pow³ok± z systemu Plan 9
+Summary:	rc - a Plan 9 shell
+Summary(pl):	rc - pow³oka z systemu Plan 9
 Name:		rc
 Version:	1.7.1
 Release:	1
@@ -22,7 +21,7 @@ jest trochê podobna do sh(1), ale jest znacznie bli¿sza C, nawet w
 porównaniu ze sk³adni± csh.
 
 %prep
-%setup  -q
+%setup -q
 
 %build
 %configure
@@ -32,8 +31,8 @@ porównaniu ze sk³adni± csh.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
-
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
