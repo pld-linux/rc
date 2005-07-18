@@ -8,6 +8,7 @@ Group:		Applications/Shells
 Source0:	http://www.star.le.ac.uk/~tjg/rc/release/%{name}-%{version}.tar.gz
 # Source0-md5:	7253e1c853824cf27edb2166214f0511
 URL:		http://www.star.le.ac.uk/~tjg/rc/
+BuildRequires:	readline-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -24,7 +25,8 @@ porównaniu ze sk³adni± csh.
 %setup -q
 
 %build
-%configure
+%configure \
+	--with-readline
 %{__make}
 
 %install
