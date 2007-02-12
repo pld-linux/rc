@@ -1,5 +1,5 @@
 Summary:	rc - a Plan 9 shell
-Summary(pl):	rc - pow≥oka z systemu Plan 9
+Summary(pl.UTF-8):   rc - pow≈Çoka z systemu Plan 9
 Name:		rc
 Version:	1.7.1
 Release:	2
@@ -16,10 +16,10 @@ rc is a shell from Plan 9 operating system. Although it is a bit
 similiar to sh(1), it's syntax is is much closer to C, even than
 syntax csh.
 
-%description -l pl
-rc jest pow≥ok± uøytkownika systemu operacyjnego Plan 9. Jej sk≥adnia
-jest trochÍ podobna do sh(1), ale jest znacznie bliøsza C, nawet w
-porÛwnaniu ze sk≥adni± csh.
+%description -l pl.UTF-8
+rc jest pow≈ÇokƒÖ u≈ºytkownika systemu operacyjnego Plan 9. Jej sk≈Çadnia
+jest trochƒô podobna do sh(1), ale jest znacznie bli≈ºsza C, nawet w
+por√≥wnaniu ze sk≈ÇadniƒÖ csh.
 
 %prep
 %setup -q
