@@ -9,7 +9,8 @@ Source0:	http://www.star.le.ac.uk/~tjg/rc/release/%{name}-%{version}.tar.gz
 # Source0-md5:	7253e1c853824cf27edb2166214f0511
 Patch0:		%{name}-tinfo.patch
 URL:		http://www.star.le.ac.uk/~tjg/rc/
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.50
+BuildRequires:	automake
 BuildRequires:	readline-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
