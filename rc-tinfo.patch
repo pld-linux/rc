@@ -1,0 +1,16 @@
+diff -urN rc-1.7.1.org/acinclude.m4 rc-1.7.1/acinclude.m4
+--- rc-1.7.1.org/acinclude.m4	2002-11-27 17:28:15.000000000 +0100
++++ rc-1.7.1/acinclude.m4	2007-06-02 22:51:21.250346882 +0200
+@@ -199,9 +199,12 @@
+ AC_DEFUN(RC_LIB_TGETENT, [
+ 	AC_CHECK_LIB(termcap, tgetent,
+ 		rc_lib_tgetent=-ltermcap,
++	    AC_CHECK_LIB(tinfo, tgetent,
++		rc_lib_tgetent=-ltinfo,
+ 		AC_CHECK_LIB(ncurses, tgetent,
+ 			rc_lib_tgetent=-lncurses,
+ 			AC_MSG_ERROR(tgetent not found)
+ 		)
++	    )
+ 	)
+ ])
