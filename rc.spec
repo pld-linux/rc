@@ -5,10 +5,10 @@ Version:	1.7.1
 Release:	3
 License:	GPL
 Group:		Applications/Shells
-Source0:	http://www.star.le.ac.uk/~tjg/rc/release/%{name}-%{version}.tar.gz
+Source0:	http://rc-shell.slackmatic.org/release/%{name}-%{version}.tar.gz
 # Source0-md5:	7253e1c853824cf27edb2166214f0511
 Patch0:		%{name}-tinfo.patch
-URL:		http://www.star.le.ac.uk/~tjg/rc/
+URL:		http://rc-shell.slackmatic.org/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
 BuildRequires:	readline-devel
