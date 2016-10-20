@@ -2,7 +2,7 @@ Summary:	rc - a Plan 9 shell
 Summary(pl.UTF-8):	rc - powłoka z systemu Plan 9
 Name:		rc
 Version:	1.7.1
-Release:	5
+Release:	6
 License:	GPL
 Group:		Applications/Shells
 Source0:	http://rc-shell.slackmatic.org/release/%{name}-%{version}.tar.gz
@@ -30,6 +30,7 @@ porównaniu ze składnią csh.
 
 %build
 %{__aclocal}
+%{__automake}
 %{__autoconf}
 %configure \
 	--with-readline
