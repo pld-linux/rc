@@ -1,0 +1,17 @@
+--- rc-1.7.4/rc.h.orig	2015-06-06 18:33:20.000000000 +0200
++++ rc-1.7.4/rc.h	2025-09-29 00:00:00.000000000 +0200
+@@ -44,9 +44,14 @@
+ 	eError, eBreak, eReturn, eVarstack, eArena, eFifo, eFd
+ } ecodes;
+
++#if __STDC_VERSION__ >= 202311L
++#define FALSE false
++#define TRUE true
++#else
+ typedef enum bool {
+ 	FALSE, TRUE
+ } bool;
++#endif
+
+ typedef enum redirtype {
+ 	rFrom, rCreate, rAppend, rHeredoc, rHerestring
