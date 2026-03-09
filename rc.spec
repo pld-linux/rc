@@ -1,14 +1,15 @@
 Summary:	rc - a Plan 9 shell
 Summary(pl.UTF-8):	rc - powłoka z systemu Plan 9
 Name:		rc
-Version:	1.7.1
-Release:	8
-License:	GPL
+Version:	1.7.4
+Release:	1
+License:	Zlib
 Group:		Applications/Shells
-Source0:	http://rc-shell.slackmatic.org/release/%{name}-%{version}.tar.gz
-# Source0-md5:	7253e1c853824cf27edb2166214f0511
-Patch0:		%{name}-tinfo.patch
-URL:		http://rc-shell.slackmatic.org/
+Source0:	https://github.com/rakitzis/rc/archive/refs/tags/v%{version}/%{name}-%{version}.tar.gz
+# Source0-md5:	3b6333d5167d3c2401969663145ec833
+# from upstream commit 429f81caf8, originally from Debian (Andreas Beckmann)
+Patch0:		%{name}-c23-bool.patch
+URL:		https://github.com/rakitzis/rc
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
 BuildRequires:	readline-devel
